@@ -37,25 +37,25 @@ const Project = () => {
         </div>
         {/* Milestones */}
         <div className="bg-white rounded-lg p-6 pt-4 pb-6 mb-3 shadow-md shadow-gray-400 my-2 border border-gray-300">
-          <h3 className="font-medium">Milestones</h3>
-          <div className="flex items-center justify-center mb-4  "></div>
-          <div className="flex justify-between overflow-x-auto ">
+          <h3 className="font-medium mb-4">Milestones</h3>
+
+          <div className="flex justify-between overflow-visible ">
             {["I", "II", "III", "IV", "V", "VI", "VII"].map((item) => (
               <div
                 key={item}
-                className="min-w-[82px]  h-20 border border-gray-300 rounded-md flex items-center justify-center text-lg font-medium text-gray-700 bg-white shadow-md shadow-gray-400 "
+                className="min-w-[82px] h-20 border border-gray-300 rounded-md flex items-center justify-center text-lg font-medium text-gray-700 bg-white shadow-[0px_8px_5px_rgba(200,200,200,0.8)]"
               >
                 {item}
               </div>
             ))}
-            <div className="min-w-[72px] h-20 border border-gray-300 rounded-md flex items-center justify-center  font-medium shadow-[0_6px_12px_rgba(0,0,0,0.15)] -translate-y-0.5 text-white text-3xl bg-blue-500">
+            <div className="min-w-[82px] h-21 border border-gray-300 rounded-md flex items-center justify-center  font-medium  text-white text-3xl bg-blue-500 shadow-[0px_8px_5px_rgba(200,200,200,0.8)]">
               +
             </div>
           </div>
         </div>
-        <div className="bg-white rounded-lg shadow-md shadow-gray-200 p-4">
+        <div className="bg-white rounded-lg shadow-md shadow-gray-400 p-4">
           {/* Header */}
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between mb-4 ">
             <h3 className="font-semibold text-lg text-gray-800">Sprint</h3>
             <div className="flex items-center gap-3">
               <button className="text-blue-600 text-sm font-medium hover:underline">
@@ -73,7 +73,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-3 gap-6 ">
             <SprintCard
               sprintNumber="2"
               userStories={4}
@@ -114,7 +114,7 @@ const Project = () => {
         </div>
       </div>
       <div className="my-8 w-1/4">
-        <aside className=" bg-white border-l border-gray-200 shadow-md p-5 rounded-lg h-fit">
+        <aside className=" bg-white border-l border-gray-200 shadow-md shadow-gray-400 p-5 rounded-lg h-fit">
           <div className="flex items-center justify-between mb-4">
             <div className="flex items-center gap-2">
               <h3 className="text-lg font-semibold text-gray-800">Team</h3>
