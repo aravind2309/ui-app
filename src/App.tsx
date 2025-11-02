@@ -1,6 +1,8 @@
+import AddProjectInfo from "./AddProjectInfo";
 import "./App.css";
-import Login from "./Login/Login";
+
 import Header from "./Header";
+
 import Project from "./Project";
 
 function App() {
@@ -8,6 +10,7 @@ function App() {
     <div>
       <Header />
       <Project />
+      <AddProjectInfo />
     </div>
   );
 }
